@@ -1,0 +1,571 @@
+html,
+body {
+    max-width: 100vw;
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+.header-search-input {
+
+    display: block;
+    width: 580px;
+    height: 50px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 9999px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    position: relative;
+}
+
+input[type="search"] {
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    vertical-align: middle; /* Выравнивание по середине */
+}
+button[type="submit"] {
+    position: absolute;
+    right: 10px;
+    background-color: black;
+    border-radius: 9999px;
+    width: 88px;
+    height: 45px;
+}
+
+.social-nav{}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .social-nav {
+        display: none;
+    }
+}
+
+.cart{
+    border: none;
+    background-color: #ffe101;
+    height: 50px;
+    width: 50px;
+    border-radius: 9999px;
+}
+
+.contact {
+    background-color: black;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.contact select{
+    background-color: #494949;
+    color: white;
+    height: 35px;
+    border: none;
+    margin-left: 5%;
+}
+
+.login{
+    padding-top: 0.5%;
+}
+
+.nav-shadow{
+    box-shadow:0px 0px 21px 0px rgba(0,0,0,0.13);
+    -webkit-box-shadow:0px 0px 21px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow:0px 0px 21px 0px rgba(0,0,0,0.13);
+}
+
+.cart-header{
+    background-color: black;
+    color: white;
+    height: 45px;
+}
+
+.order-header{
+    background-color: #ffe101;
+    height: 45px;
+}
+
+.cart-table img{
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+}
+
+.quantity {
+    position: relative;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .quantity {
+        padding-left: 20%;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]
+{
+    -moz-appearance: textfield;
+}
+
+.quantity input {
+    width: 65px;
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border: 1px solid #eee;
+}
+
+.quantity input:focus {
+    outline: 0;
+}
+
+.quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .quantity-nav {
+        float: left;
+        position: absolute;
+        height: 42px;
+    }
+}
+
+.quantity-button {
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    width: 20px;
+    text-align: center;
+    color: #333;
+    line-height: 1.7;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.quantity-button.quantity-up {.quantity input
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+    position: absolute;
+    bottom: -1px;
+}
+
+.btn-check{
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+
+.btn-update{
+    background-color: #ffe101;
+    color: black;
+    height: 45px;
+    width: 185px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+}
+
+.update{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .update{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
+
+.main-footer {
+    padding-top: 30px;
+    padding-bottom: 39px;
+    color: white;
+    background-color: black;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.main-footer a:not(.btn) {
+    color: #98a2aa;
+}
+
+.main-footer a:not(.btn):hover {
+    color: #fff;
+}
+
+ul.social-icon {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+
+ul.social-icon li{
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+}
+
+ul.social-nav {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+    display: contents;
+}
+
+ul.social-nav li{
+    display: inline; /* Отображать как строчный элемент */
+}
+
+.email_form{
+    width: 120%;
+    height: 45px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    .email_form{
+        width: 95%;
+        height: 45px;
+    }
+}
+
+hr {
+    height: 30px;
+}
+
+.btn-sub{
+    background-color: #ed145b;
+    color: white;
+    height: 41px;
+    width: 131px;
+    border: none;
+    margin-bottom: 21px;
+}
+
+.ld-sp .price,
+.ld-sp h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6875em;
+    font-weight: normal;
+}
+.ld-sp .price {
+    color: #191919;
+    letter-spacing: 0;
+}
+.ld-sp .price del {
+    opacity: 1;
+}
+.ld-sp .price ins {
+    font-weight: inherit;
+    text-decoration: none;
+}
+.ld-sp .yith-wcwl-add-to-wishlist {
+    margin: 0;
+    position: absolute;
+    top: auto;
+    bottom: 70px;
+    right: 17px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+    -webkit-transition-property: opacity, visibility, -webkit-transform;
+    transition-property: opacity, visibility, -webkit-transform;
+    transition-property: transform, opacity, visibility;
+    transition-property: transform, opacity, visibility, -webkit-transform;
+    -webkit-transition-duration: 0.45s;
+    transition-duration: 0.45s;
+    -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.ld-sp .yith-wcwl-add-to-wishlist > div a {
+    border: none;
+    border-radius: 50em !important;
+    background-color: #fff;
+    font-size: 12px;
+}
+.ld-sp .yith-wcwl-add-to-wishlist > div a:hover {
+    color: var(--color-primary);
+}
+.ld-sp .yith-wcwl-add-to-wishlist > div i {
+    margin: 0;
+    font-size: 17px;
+}
+.ld-sp .yith-wcwl-add-to-wishlist > div .feedback {
+    visibility: hidden;
+    opacity: 0;
+}
+.ld-sp .yith-wcwl-add-to-wishlist > div.show {
+    width: 39px;
+    height: 39px;
+}
+.ld-sp .yith-wcwl-add-to-wishlist > div.yith-wcwl-add-button i.fa-heart-o + .fa-heart {
+    display: none;
+}
+.ld-sp .yith-wcwl-add-to-wishlist > div.yith-wcwl-wishlistaddedbrowse a, .ld-sp .yith-wcwl-add-to-wishlist > div.yith-wcwl-wishlistexistsbrowse a {
+    color: var(--color-primary);
+}
+.ld-sp .yith-wcwl-add-to-wishlist .ajax-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.ld-sp:hover .yith-wcwl-add-to-wishlist {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition-delay: 0.13s;
+    transition-delay: 0.13s;
+}
+
+.ld-sp a.button,
+.ld-sp input.button,
+.ld-sp button.button,
+.ld-sp #respond input#submit {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1.15em 2.1em;
+    position: relative;
+    border-radius: 0;
+    background-color: var(--color-primary);
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #fff;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.05), 0 0 0 rgba(0, 0, 0, 0.05), 0 0 0 rgba(0, 0, 0, 0.05), 0 0 0 rgba(0, 0, 0, 0.05), 0 0 0 rgba(0, 0, 0, 0.05);
+}
+.ld-sp a.button > i,
+.ld-sp input.button > i,
+.ld-sp button.button > i,
+.ld-sp #respond input#submit > i {
+    margin-right: 0.75em;
+}
+.ld-sp a.button > span + i,
+.ld-sp input.button > span + i,
+.ld-sp button.button > span + i,
+.ld-sp #respond input#submit > span + i {
+    margin-right: 0;
+    margin-left: 0.75em;
+}
+.ld-sp a.button.loading,
+.ld-sp input.button.loading,
+.ld-sp button.button.loading,
+.ld-sp #respond input#submit.loading {
+    padding-right: 2.1em;
+}
+.ld-sp a.button.loading:after,
+.ld-sp input.button.loading:after,
+.ld-sp button.button.loading:after,
+.ld-sp #respond input#submit.loading:after {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-left: 0.75em;
+}
+.ld-sp a.button.added:after,
+.ld-sp input.button.added:after,
+.ld-sp button.button.added:after,
+.ld-sp #respond input#submit.added:after {
+    margin-left: 0.75em;
+}
+.ld-sp a.button.disabled, .ld-sp a.button:disabled, .ld-sp a.button:disabled[disabled],
+.ld-sp input.button.disabled,
+.ld-sp input.button:disabled,
+.ld-sp input.button:disabled[disabled],
+.ld-sp button.button.disabled,
+.ld-sp button.button:disabled,
+.ld-sp button.button:disabled[disabled],
+.ld-sp #respond input#submit.disabled,
+.ld-sp #respond input#submit:disabled,
+.ld-sp #respond input#submit:disabled[disabled] {
+    padding: 1.15em 2.1em;
+}
+.ld-sp a.button:hover, .ld-sp a.button:focus,
+.ld-sp input.button:hover,
+.ld-sp input.button:focus,
+.ld-sp button.button:hover,
+.ld-sp button.button:focus,
+.ld-sp #respond input#submit:hover,
+.ld-sp #respond input#submit:focus {
+    background-color: #000;
+    color: #fff;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.05), 0px 8px 8px rgba(0, 0, 0, 0.05), 0px 16px 16px rgba(0, 0, 0, 0.05);
+}
+.ld-sp a.added_to_cart {
+    display: block;
+}
+
+.ld-sp {
+    width: 115%;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.6875em;
+    border: 1px solid #f4f4f4;
+    box-shadow:0px 0px 21px 0px rgba(0,0,0,0.13);
+    -webkit-box-shadow:0px 0px 21px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow:0px 0px 21px 0px rgba(0,0,0,0.13);
+    padding: 15px;
+}
+.ld-sp figure {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.ld-sp figure img {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.ld-sp-info h3 {
+    margin: 0;
+    font-size: inherit;
+}
+.ld-sp-info h3 a {
+    color: #000;
+}
+
+.ld-sp-price {
+    color: #191919;
+    margin: 0;
+    font-weight: bold;
+}
+
+.ld-sp .ld-sp-add-to-cart,
+.ld-sp .add_to_cart_button {
+    display: block;
+    border-radius: 5px;
+    padding: 8px 15px;
+    left: 17px;
+    right: 17px;
+    bottom: 17px;
+    background-color: #ffe101;
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    white-space: normal;
+    -webkit-transform: translateY(15%);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(15%);
+    opacity: 1;
+}
+
+.ld-sp-ml{
+    color: #a4a4a4;
+}
+
+.main-content{
+    color: white;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.btn-main{
+    background-color: #ffe101;
+    color: black;
+    height: 35px;
+    width: 110px;
+    border: none;
+    border-radius: 5px;
+}
+
+.shop-content{
+    color: white;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.btn-view{
+    background-color: #ffe101;
+    color: black;
+    height: 35px;
+    width: 110px;
+    border: none;
+    border-radius: 20px;
+}
+
+.party-content{
+    color: black;
+    position: absolute;
+    top: 0px;
+    width: 97%;
+}
+
+.party-content1{
+    color: white;
+    position: absolute;
+    top: 25px;
+    width: 97%;
+}
+
+.btn-party1{
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 178px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.btn-party2{
+    background-color: #ffe101;
+    color: black;
+    height: 55px;
+    width: 178px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.party-hd{}
+
+@media only screen and (max-width: 1510px) and (min-width: 1200px) {
+    .party-hd{
+        width: 670px;
+        height: 346px;
+    }
+}

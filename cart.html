@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+
+     <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/928a24894f.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <title>Drinx Market</title>
+</head>
+<body>
+<div class="contact">
+    <select>
+        <option value="1409 Ritche mariboro Rd. Capital Hights. MD 20743">1409 Ritche mariboro Rd. Capital Hights. MD 20743</option>
+        <option value="1409 Ritche mariboro Rd. Capital Hights. MD 20743">1409 Ritche mariboro Rd. Capital Hights. MD 20743</option>
+    </select>
+
+    <div class="login">
+        <p><i class="fas fa-phone-volume" style="color: #ffe101"></i> +1(240) 800 - 0060</p>
+    </div>
+    <div style="background-color: #ffe101; color: black">
+        <p style="padding-top: 2%; padding-right: 5%">&nbsp;<i class="fas fa-user-circle"></i> Sign In &nbsp; | &nbsp; Crate an Account</p>
+    </div>
+</div>
+
+<!-- navbar -->
+<div class="navbar navbar-expand-lg" style="padding-top: 2%;     display: flex;
+    justify-content: space-between;">
+    <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+        <ul class="social-nav mr-4">
+            <li class="nav-item"><a class="nav-link" href="#" style="padding: 5px;"><img src="./img/facebook.png" alt=""></a></li>
+            <li class="nav-item"><a class="nav-link " href="#" style="padding: 5px;"><img src="./img/google.png" alt=""></a></li>
+            <li class="nav-item"><a class="nav-link " href="#" style="padding: 5px;"><img src="./img/instagram.png" alt=""></a></li>
+            <li class="nav-item"><a class="nav-link " href="#" style="padding: 5px;"><img src="./img/yelp.png" alt=""></a></li>
+        </ul>
+
+    <div class="form-inline my-2 my-lg-0" style="position: relative">
+        <input class="mr-sm-2 header-search-input" type="search" placeholder="Search...." aria-label="Search">
+        <button class="btn button-search my-2 my-sm-0" type="submit" ><i class="fas fa-search" style="color: white; font-size: 22px"></i></button>
+    </div>
+    <button class="cart">
+        <i class="fas fa-shopping-cart"></i>
+    </button>
+
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-shadow" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" >
+        <ul class="navbar-nav mr-auto" style="margin-left: 3%">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Wine </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    &nbsp; | &nbsp;&nbsp;Spirits</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    &nbsp; | &nbsp;&nbsp;Beer & Cider
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    &nbsp; | &nbsp;&nbsp;Snacks, Mixers & More
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">&nbsp; | &nbsp;&nbsp;Gifts</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    &nbsp; | &nbsp;&nbsp;Recipes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">&nbsp; | &nbsp;&nbsp;Parties, Weddings & Corporate Orders</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <table class="table cart-table nav-shadow table-responsive" >
+                <thead class="cart-header">
+                <tr>
+                    <th scope="col">IMAGE</th>
+                    <th scope="col">PRODUCT</th>
+                    <th scope="col">PRICE</th>
+                    <th scope="col">QUANTITY</th>
+                    <th scope="col">TOTAL</th>
+                    <th scope="col">REMOVE</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr >
+                    <th scope="row"><img src="./img/product1.png" alt=""></th>
+                    <td>Navigator Napa Valley <br>
+                        Cabernet Sauvignon </td>
+                    <td>$ 150.00</td>
+                    <td><div class="quantity">
+                        <input type="number" min="1" max="9" step="1" value="1">
+                    </div></td>
+                    <td>$ 150.00</td>
+                    <td><a href=""><img src="./img/remove.png" alt="" style="border: none"></a></td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="./img/product2.png" alt=""></th>
+                    <td>Coppola Chardonnay</td>
+                    <td>$ 150.00</td>
+                    <td><div class="quantity">
+                        <input type="number" min="1" max="9" step="1" value="1">
+                    </div></td>
+                    <td>$ 150.00</td>
+                    <td><a href=""><img src="./img/remove.png" alt="" style="border: none"></a></td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="./img/product3.png" alt=""></th>
+                    <td>Dolce Vita Prosecco</td>
+                    <td>$ 150.00</td>
+                    <td><div class="quantity">
+                        <input type="number" min="1" max="9" step="1" value="1">
+                    </div></td>
+                    <td>$ 150.00</td>
+                    <td><a href=""><img src="./img/remove.png" alt="" style="border: none"></a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="update">
+            <button type="button" class="btn-update">UPDATE CART</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <table class="table cart-table nav-shadow">
+                <thead class="order-header text-center ">
+                <tr>
+                    <th scope="col" colspan="2">CART SUMMARY</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Sub Total</th>
+                    <td class="text-right">$520.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Shipping Cost</th>
+                    <td class="text-right">$010.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Grand  Total</th>
+                    <td class="text-right">$530.00</td>
+                </tr>
+                <tr><th scope="col" colspan="2"><button type="button" class="btn-check">CHECK OUT</button></th></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<footer class="main-footer bg-charade pt-70" data-sticky-footer="true">
+
+    <section>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6">
+
+                    <img src="./img/logo_black.png" alt="" style="width: 95%; padding-top: 8px;">
+
+                    <p style="padding-top: 35px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                </div><!-- /.col-md-3 col-sm-6 -->
+
+                <div class="col-md-3 col-sm-6">
+
+                    <h3 class="widget-title text-white">QUICK LINKS</h3>
+                    <hr align="left" width="63px" color="white">
+                    <ul class="lqd-custom-menu reset-ul text-white">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Wine, Spirits, Beer News</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+
+                </div><!-- /.col-md-3 col-sm-6 -->
+
+                <div class="col-md-3 col-sm-6">
+
+                    <h3 class="widget-title text-white" >OUR MENU</h3>
+                    <hr align="left" width="63px" color="white">
+                    <ul class="lqd-custom-menu reset-ul text-white">
+                        <li><a href="#">Wine</a></li>
+                        <li><a href="#">Spirits</a></li>
+                        <li><a href="#">Beer & Cider</a></li>
+                        <li><a href="#">Snacks, Mixers & More</a></li>
+                        <li><a href="#">Gifts</a></li>
+                    </ul>
+
+                </div><!-- /.col-md-3 col-sm-6 -->
+
+                <div class="col-md-3 col-sm-6">
+
+                    <h3 class="widget-title text-white" >OUR NEWSLETTER</h3>
+                    <hr align="left" width="63px" color="white">
+                    <div class="ld-sf ld-sf--input-solid ld-sf--button-solid ld-sf--size-xs ld-sf--circle ld-sf--border-thin ld-sf--button-show ld-sf--button-inline">
+                        <form id="ld_subscribe_form" class="ld_sf_form">
+                            <p class="ld_sf_paragraph pr-2">
+                                <input type="email" class="email_form" placeholder="Email Address" value="">
+                            </p>
+                        </form>
+                        <div class="ld_sf_response"></div>
+                    </div><!-- /.ld-sf -->
+                    <button type="button" class="btn-sub">UPDATE CART</button>
+                    <ul class="social-icon social-icon-md">
+                        <li><a href="#"><img src="./img/facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="./img/google.png" alt=""></a></li>
+                        <li><a href="#"><img src="./img/instagram.png" alt=""></a></li>
+                        <li><a href="#"><img src="./img/yelp.png" alt=""></a></li>
+                    </ul>
+
+
+
+                </div><!-- /.col-md-3 col-sm-6 -->
+
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+
+    </section>
+
+
+
+</footer><!-- /.main-footer -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="./js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
